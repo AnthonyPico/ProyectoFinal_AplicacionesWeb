@@ -1,0 +1,292 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: #f8f8f8;
+    color: #333;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 40px;
+    background-color: #2c2c2c;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .logo-img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+
+  .search-bar {
+    flex: 1;
+    margin: 0 20px;
+    display: flex;
+  }
+
+  .search-bar input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+  }
+
+  .search-bar button {
+    padding: 8px 12px;
+    background-color: #e0002a;
+    border: none;
+    color: white;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+  }
+
+  .nav-icons {
+    position: relative;
+  }
+
+  .nav-icons a {
+    margin-left: 20px;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .nav-icons a:hover {
+    color: #e0002a;
+  }
+
+  .cart-counter {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+  }
+
+  .detalle-libro {
+    width: 100%;
+    background-color: #fff;
+    padding: 30px 60px;
+    box-sizing: border-box;
+  }
+
+  .detalle-container {
+    display: grid;
+    grid-template-columns: 250px 1fr 300px;
+    gap: 30px;
+    align-items: flex-start;
+    width: 90%;
+  }
+
+  .portada img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    background-color: #f3f3f3;
+    display: block;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+
+  .detalle-info h3 {
+    margin-bottom: 8px;
+    font-size: 24px;
+    color: #e0002a;
+  }
+
+  .detalle-info .especialidad {
+    color: #e0002a;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .detalle-info .estrellas {
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: gold;
+  }
+
+  .detalle-info .autor {
+    font-weight: bold;
+    color: #e0002a;
+    margin-bottom: 12px;
+  }
+
+  .detalle-info .descripcion {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+  }
+
+  .detalle-alquilar {
+    text-align: left;
+  }
+
+  .detalle-alquilar .btn-alquilar {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+
+  .detalle-alquilar .btn-alquilar:hover {
+    background-color: #0056b3;
+  }
+
+  .detalle-alquilar h4 {
+    margin: 20px 0 10px;
+    font-size: 14px;
+    color: #e0002a;
+  }
+
+
+
+
+  footer {
+    background-color: #2c2c2c;
+    color: #fff;
+    padding: 20px 30px 0;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+  }
+
+  .footer-left {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .footer-logo {
+    height: 60px;
+    width: auto;
+  }
+
+  .footer-left nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .footer-left nav a {
+    color: #f44336;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+
+  .footer-left nav a:hover {
+    color: #ffffff;
+  }
+
+  .footer-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .contact-info strong {
+    font-size: 17px;
+    color: white;
+  }
+
+  .contact-info p {
+    margin: 0;
+    color: #ccc;
+  }
+
+  .contact-info a {
+    color: #f44336;
+    text-decoration: none;
+  }
+
+  .contact-info a:hover {
+    color: #ffffff;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 4px;
+  }
+
+  .social-link {
+    color: #f44336;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+
+  .social-link:hover {
+    color: white;
+  }
+
+  .footer-bottom {
+    margin-top: 3px;
+    font-size: 14px;
+    color: #bbb;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .admin-buttons {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+  }
+
+  .btn-admin {
+    padding: 8px 12px;
+    background-color: #d32f2f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-admin:hover {
+    background-color: #a62828;
+  }

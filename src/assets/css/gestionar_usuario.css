@@ -1,0 +1,469 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: #f8f8f8;
+    color: #333;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 40px;
+    background-color: #2c2c2c;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .logo-img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+
+  .search-bar {
+    flex: 1;
+    margin: 0 20px;
+    display: flex;
+  }
+
+  .search-bar input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+  }
+
+  .search-bar button {
+    padding: 8px 12px;
+    background-color: #e0002a;
+    border: none;
+    color: white;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+  }
+
+  .nav-icons a {
+    margin-left: 20px;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .nav-icons a:hover {
+    color: #e0002a;
+  }
+
+  footer {
+    background-color: #2c2c2c;
+    color: #fff;
+    padding: 20px 30px 0;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+  }
+
+  .footer-left {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .footer-logo {
+    height: 60px;
+    width: auto;
+  }
+
+  .footer-left nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .footer-left nav a {
+    color: #f44336;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+
+  .footer-left nav a:hover {
+    color: #ffffff;
+  }
+
+  .footer-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .contact-info strong {
+    font-size: 17px;
+    color: white;
+  }
+
+  .contact-info p {
+    margin: 0;
+    color: #ccc;
+  }
+
+  .contact-info a {
+    color: #f44336;
+    text-decoration: none;
+  }
+
+  .contact-info a:hover {
+    color: #ffffff;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 4px;
+  }
+
+  .social-link {
+    color: #f44336;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+
+  .social-link:hover {
+    color: white;
+  }
+
+  .footer-bottom {
+    margin-top: 3px;
+    font-size: 14px;
+    color: #bbb;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .admin-panel {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .usuario-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    margin: 0 auto 2rem; /* Centrado vertical y margen inferior */
+    transition: transform 0.3s ease;
+    max-width: 900px; /* Ancho máximo reducido */
+    width: 90%; /* Para que no toque los bordes en móviles */
+  }
+
+  .usuario-card:hover {
+    transform: scale(1.01);
+  }
+
+  .info-usuario h3 {
+    margin-bottom: 0.3rem;
+    color: #a72b2a;
+  }
+
+  .info-usuario p {
+    margin: 0.2rem 0;
+    color: #444;
+  }
+
+  .libros-alquilados {
+    margin-top: 1.5rem;
+    background-color: #f8f8f8;
+    padding: 1.25rem;
+    border-radius: 12px;
+    border-left: 4px solid #a72b2a;
+  }
+
+  .libros-alquilados > p {
+    color: #a72b2a;
+
+  }
+
+  .libros-alquilados > p::before {
+    font-size: 1.2rem;
+  }
+
+  .libros-alquilados ul {
+    list-style-type: none;
+  }
+
+  .libros-alquilados li {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #474444;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .libros-alquilados li:last-child {
+    border-bottom: none;
+  }
+
+  .libros-alquilados li span {
+    display: inline-block;
+  }
+
+  .libros-alquilados li span:first-child {
+    font-weight: 600;
+    color: #333;
+  }
+
+  .libros-alquilados li span:last-child {
+    font-size: 0.9rem;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
+  .libros-alquilados li span:last-child::before {
+    content: "⏳";
+    font-size: 0.9rem;
+  }
+
+  .acciones-usuario {
+    margin-top: 1rem;
+  }
+
+  .acciones-usuario textarea {
+    width: 100%;
+    height: 60px;
+    margin-top: 0.5rem;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: none;
+  }
+
+  .botones-usuario {
+    margin-top: 0.8rem;
+    display: flex;
+    gap: 1rem;
+  }
+
+  .btn-aviso, .btn-eliminar {
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s;
+  }
+
+  .btn-aviso {
+    background-color: #a72b2a;
+    color: white;
+  }
+
+  .btn-aviso:hover {
+    background-color: #881f1e;
+  }
+
+  .btn-eliminar {
+    background-color: #888;
+    color: white;
+  }
+
+  .btn-eliminar:hover {
+    background-color: #555;
+  }
+
+  .admin-buttons {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+  }
+
+  .btn-admin {
+    padding: 8px 12px;
+    background-color: #d32f2f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-admin:hover {
+    background-color: #a62828;
+  }
+
+  .admin-panel > *:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+
+  .grid-libros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+  }
+
+  .buscador-usuarios {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px 15px;
+    margin: 20px auto;
+    display: block;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .buscador-usuarios:focus {
+    border-color: #b30000;
+    box-shadow: 0 0 5px rgba(179, 0, 0, 0.4);
+  }
+
+  /* Estilos para los modales (nuevos) */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    backdrop-filter: blur(2px);
+  }
+
+  .modal-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: modalFadeIn 0.3s ease-out;
+  }
+
+  .modal-container h3 {
+    margin-bottom: 1rem;
+    color: #a72b2a;
+    font-size: 1.5rem;
+  }
+
+  .modal-container p {
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  .modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+
+  .btn-cancelar {
+    padding: 0.6rem 1.2rem;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 8px;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .btn-cancelar:hover {
+    background-color: #e0e0e0;
+  }
+
+  .btn-confirmar {
+    padding: 0.6rem 1.2rem;
+    background-color: #a72b2a;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .btn-confirmar:hover {
+    background-color: #881f1e;
+  }
+
+  @keyframes modalFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Estilos para el checkbox de administrador */
+  .acciones-usuario label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 0.5rem;
+  }
+
+  .acciones-usuario input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #a72b2a;
+    cursor: pointer;
+  }
+
+  .descripcion-admin {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #555;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+  }
